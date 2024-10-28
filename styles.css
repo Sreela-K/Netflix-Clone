@@ -46,9 +46,22 @@ img{
     background: url(img/background.jpg) no-repeat center center/cover;
 }
 
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,.6);
+    box-shadow: inset 100px 80px 230px #000000;
+}
+
 .showcasetop {
     position: relative;
     height: 90px;
+    z-index: 2;
 }
 
 .showcasetop img {
@@ -75,6 +88,7 @@ img{
     align-items: center;
     text-align: center;
     margin-top: 1rem;
+    z-index: 2;
 }
 
 .content h1{
