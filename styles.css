@@ -1,5 +1,6 @@
 :root {
     --primary-color: red;
+    --dark-color: #141414;
 }
 
 * {
@@ -97,6 +98,50 @@ img{
     line-height:1.5;
     margin: 0 0 2m;
 }
+
+/* Tabs */
+
+.tabs{
+    background-color: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.tabs p {
+    font-size: 1rem;
+    padding-top: .5rem;
+}
+
+.tabs .container > div {
+    padding: .5rem 0;
+}
+
+.tabs .container>div :hover{
+    color: white;
+    cursor: pointer;
+}
+
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+.container{
+    max-width: 85%;
+    overflow: hidden;
+    margin: auto;
+    padding:0 2rem ;
+}
+
+
 /* Button */
 .btn{
     display: inline-block;
